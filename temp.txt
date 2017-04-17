@@ -1,0 +1,17 @@
+Encoding
+
+The ASCII character set is the most common format for English-language text files, and is generally assumed to be the default file format in many situations. For accented and other non-ASCII characters, it is necessary to choose a character encoding. In many systems, this is chosen on the basis of the default locale setting on the computer it is read on. Common character encodings include ISO 8859-1 for many European languages.
+
+Because many encodings have only a limited repertoire of characters, they are often only usable to represent text in a limited subset of human languages. Unicode is an attempt to create a common standard for representing all known languages, and most known character sets are subsets of the very large Unicode character set. Although there are multiple character encodings available for Unicode, the most common is UTF-8, which has the advantage of being backwards-compatible with ASCII; that is, every ASCII text file is also a UTF-8 text file with identical meaning.
+
+Formats
+
+On most operating systems the name text file refers to file format that allows only plain text content with very little formatting (e.g., no bold or italic types). Such files can be viewed and edited on text terminals or in simple text editors. Text files usually have the MIME type "text/plain", usually with additional information indicating an encoding.
+
+Windows text files
+
+MS-DOS and Windows use a common text file format, with each line of text separated by a two-character combination: carriage return (CR) and line feed (LF). It is common for the last line of text not to be terminated with a CR-LF marker, and many text editors (including Notepad) do not automatically insert one on the last line.
+
+On Microsoft Windows operating systems, a file is regarded as a text file if the suffix of the name of the file (the "filename extension") is "txt". However, many other suffixes are used for text files with specific purposes. For example, source code for computer programs is usually kept in text files that have file name suffixes indicating the programming language in which the source is written.
+
+Most Windows text files use "ANSI", "OEM", "Unicode" or "UTF-8" encoding. What Windows terminology calls "ANSI encodings" are usually single-byte ISO/IEC 8859 encodings (i.e. ANSI in the Microsoft Notepad menus is really "System Code Page", non-Unicode, legacy encoding), except for in locales such as Chinese, Japanese and Korean that require double-byte character sets. ANSI encodings were traditionally used as default system locales within Windows, before the transition to Unicode. By contrast, OEM encodings, also known as DOS code pages, were defined by IBM for use in the original IBM PC text mode display system. They typically include graphical and line-drawing characters common in DOS applications. "Unicode"-encoded Windows text files contain text in UTF-16 Unicode Transformation Format. Such files normally begin with Byte Order Mark (BOM), which communicates the endianness of the file content. Although UTF-8 does not suffer from endianness problems, many Windows programs (i.e. Notepad) prepend the contents of UTF-8-encoded files with BOM,[2] to differentiate UTF-8 encoding from other 8-bit encodings.[3]
